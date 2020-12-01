@@ -62,7 +62,12 @@ public class MainActivity extends AppCompatActivity {
                         db = new Database(MainActivity.this);
                         boolean success = db.addEvent(Event1);
                         if(success) {
-                            Toast.makeText(MainActivity.this, success+" [The event was added successfully]", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, " [The event was added successfully]", Toast.LENGTH_SHORT).show();
+
+                        }
+                        else {
+                            Toast.makeText(MainActivity.this, " [The event was not added successfully]", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 }
